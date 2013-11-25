@@ -1,1 +1,0 @@
-cmd = top500Peaks.bed hg19 top500Peaks.out -len 6
