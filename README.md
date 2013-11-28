@@ -6,7 +6,17 @@ Bioinformatics worshop
 In this practical you will:
 - Download a ChIP Seq dataset, identify the peaks, obtain the corresponding DNA sequences and discover enriched motifs inside these sequences. Hopefully, by matching the identified motif with a database of Transcription Factor motifs you will be able to determine for which TF the ChIP-Seq experiment was made.
 
-To begin with, download a ChIP-Seq dataset produced by the ENCODE project and available on UCSC:
+Before you start, download a copy of the human genome in fasta format.
+If you are on linux type the following in a terminal:
+```bash
+wget -O - http://www.ebi.ac.uk/~tl344/hg19.fa.gz | gunzip > hg19.fa
+```
+If you are on a Mac:
+```bash
+curl -o - http://www.ebi.ac.uk/~tl344/hg19.fa.gz | gunzip > hg19.fa
+```
+
+While the dowload completes you can procede and download a ChIP-Seq dataset produced by the ENCODE project and available on UCSC:
 
 ### Download the ChIP-Seq dataset for the transcription factor X
 ```bash
