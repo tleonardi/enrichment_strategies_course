@@ -19,9 +19,11 @@ curl -o - http://www.ebi.ac.uk/~tl344/hg19.fa.gz | gunzip > hg19.fa
 While the dowload completes you can procede and download a ChIP-Seq dataset produced by the ENCODE project and available on UCSC:
 
 ### Download the ChIP-Seq dataset for the transcription factor X
+If you are on Linux:
 ```bash
 wget -O - http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeSydhTfbs/wgEncodeSydhTfbsK562CmycStdPk.narrowPeak.gz | gunzip > chip-seq.narrowPeak
 ```
+While if you are on mac it is as before: curl -o - http://... | gunzip > chip-seq.narrowPeak
 
 For more information on the format of this file, go here: http://genome.ucsc.edu/FAQ/FAQformat.html#format12
 Now you can sort this file by q-value (column 9) and extract the top 500 peaks:
